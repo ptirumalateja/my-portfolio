@@ -1,0 +1,68 @@
+/* =====================
+   CSS Variables (global — must live here, not in component SCSS)
+   ===================== */
+:root {
+  /* Brand colors extracted from logo */
+  --orange: #E8851C;
+  --orange-light: #F0A040;
+  --orange-dark: #C46A0E;
+  --orange-glow: rgba(232, 133, 28, 0.18);
+
+  --teal: #2BBDBD;
+  --teal-dark: #1E9898;
+  --teal-glow: rgba(43, 189, 189, 0.13);
+
+  /* Accent aliases */
+  --accent: var(--orange);
+  --accent-dark: var(--orange-dark);
+  --accent-glow: var(--orange-glow);
+
+  /* Backgrounds */
+  --bg-deep: #060E1A;
+  --bg-section: #08111F;
+  --bg-card: #0D1829;
+  --bg-card-hover: #111F38;
+
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.07);
+  --border-accent: rgba(232, 133, 28, 0.35);
+
+  /* Typography */
+  --text-light: #F2F6FF;
+  --text-muted: rgba(255, 255, 255, 0.38);
+
+  /* Fonts */
+  --font-brand: 'Rajdhani', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --nav-height: 80px;
+
+  /* Component-specific backgrounds */
+  --nav-scrolled-bg: rgba(6, 14, 26, 0.92);
+  --sectors-bg: #070E1C;
+  --footer-bg: #04090F;
+}
+
+/* =====================
+   Global Reset
+   ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-deep);
+  color: var(--text-light);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}

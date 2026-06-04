@@ -1,0 +1,1288 @@
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar" [class.scrolled]="navScrolled">
+  <a href="#home" class="nav-brand">
+    <div class="nav-brand-text">
+      <span class="nav-logo">Tirumala Teja</span>
+      <span class="nav-tagline">Lead Full-Stack Engineer</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#home" [class.active]="activeSection === 'home'" (click)="setActiveSection('home')">Home</a></li>
+    <li><a href="#about" [class.active]="activeSection === 'about'" (click)="setActiveSection('about')">About</a></li>
+    <li><a href="#skills" [class.active]="activeSection === 'skills'"
+        (click)="setActiveSection('skills')">Skills</a></li>
+    <li><a href="#project" [class.active]="activeSection === 'project'"
+        (click)="setActiveSection('project')">Projects</a></li>
+    <li><a href="#experience" [class.active]="activeSection === 'experience'"
+        (click)="setActiveSection('experience')">Experience</a></li>
+    <li><a href="#contact" [class.active]="activeSection === 'contact'"
+        (click)="setActiveSection('contact')">Contact</a></li>
+  </ul>
+
+  <a href="#contact" class="nav-cta">Say Hello</a>
+</nav>
+
+<main class="main-page">
+
+  <!-- ========== HERO ========== -->
+  <section class="hero-section" id="home">
+    <div class="hero-fade"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow animate-fade-down">Lead Full-Stack Engineer &nbsp;&middot;&nbsp; Mobile &middot; Web &middot; Backend &middot; Database</p>
+      <h1 class="hero-title animate-fade-up">Tirumala Teja</h1>
+      <h2 class="hero-subtitle animate-fade-up delay-1">Pulipati Tirumala Teja</h2>
+      <div class="hero-divider animate-fade-up delay-2"></div>
+      <p class="hero-description animate-fade-up delay-2">
+        6+ years architecting production-grade systems across mobile, web, and backend. Delivered OCPP-based EV
+        ecosystems, ML-integrated interview platforms, and railway telemetry dashboards handling crore-level datasets.
+        I own the full stack - design, build, ship, and stay.
+      </p>
+      <div class="hero-actions animate-fade-up delay-3">
+        <a href="#project" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline btn-glow">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECH STACK BAR ========== -->
+  <div class="sectors-bar">
+    <span class="sector-label animate-fade-down delay-1">Tech Stack</span>
+    <div class="sectors-list animate-fade-down delay-2">
+      <span>Flutter</span>
+      <span class="sector-dot">&middot;</span>
+      <span>Angular</span>
+      <span class="sector-dot">&middot;</span>
+      <span>Spring Boot</span>
+      <span class="sector-dot">&middot;</span>
+      <span>PostgreSQL / MySQL</span>
+      <span class="sector-dot">&middot;</span>
+      <span>WebSockets</span>
+      <span class="sector-dot">&middot;</span>
+      <span>BLE</span>
+      <span class="sector-dot">&middot;</span>
+      <span>OCPP 1.6</span>
+      <span class="sector-dot">&middot;</span>
+      <span>ONNX AI</span>
+    </div>
+  </div>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats-section">
+    <div class="stats-inner">
+      <div class="stat-item reveal">
+        <span class="stat-number">6<span class="stat-plus">+</span></span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal reveal-d1">
+        <span class="stat-number">12<span class="stat-plus">+</span></span>
+        <span class="stat-label">Projects Shipped</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal reveal-d2">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Platforms (Mobile &middot; Web &middot; Desktop)</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal reveal-d3">
+        <span class="stat-number">5<span class="stat-plus">+</span></span>
+        <span class="stat-label">Industry Domains</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DOMAINS ========== -->
+  <section class="trusted-section">
+    <div class="section-inner section-inner--center">
+      <p class="trusted-label reveal">Domains I've Delivered In</p>
+      <div class="trusted-list reveal reveal-d1">
+        <div class="trusted-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+          </svg>
+          <span>EV &amp; Energy</span>
+        </div>
+        <div class="trusted-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 12h18M3 6l9-3 9 3M3 18l9 3 9-3" />
+            <circle cx="12" cy="12" r="2" />
+          </svg>
+          <span>Indian Railways</span>
+        </div>
+        <div class="trusted-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+          <span>HR Technology</span>
+        </div>
+        <div class="trusted-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+            <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+            <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+            <line x1="12" y1="20" x2="12.01" y2="20" />
+          </svg>
+          <span>Industrial IoT</span>
+        </div>
+        <div class="trusted-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 8v4l3 2" />
+            <path d="M5.8 5.8l1.4 1.4M16.8 5.8l-1.4 1.4" />
+          </svg>
+          <span>Smart Transport</span>
+        </div>
+        <div class="trusted-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="7" width="20" height="14" rx="2" />
+            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+          </svg>
+          <span>Industrial OEM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about-section" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-text">
+        <p class="section-eyebrow reveal">Who I Am</p>
+        <h2 class="section-title reveal reveal-d1">Building Production-Grade Systems Across Every Layer</h2>
+
+        <div class="about-block reveal reveal-d2">
+          <h4 class="about-block-title">Background</h4>
+          <p class="section-body">
+            I'm a Lead Full-Stack Engineer based in Hyderabad with 6+ years of experience building real-time,
+            production-grade systems. I started with Flutter mobile apps, grew into backend architecture with Spring Boot,
+            and now lead end-to-end delivery across mobile, web, API, and database for complex embedded and enterprise systems.
+          </p>
+        </div>
+
+        <div class="about-block reveal reveal-d3">
+          <h4 class="about-block-title">What I Do</h4>
+          <p class="section-body">
+            I architect and implement complete systems - from Flutter mobile apps (Android, iOS, Windows) to Angular
+            dashboards, Spring Boot WebSocket servers, and normalized PostgreSQL schemas with 40–60+ tables. My work
+            spans OCPP-based EV charging, KAVACH railway telemetry, AI-driven interview platforms, and BLE-connected IoT products.
+          </p>
+        </div>
+
+        <div class="about-block reveal reveal-d4">
+          <h4 class="about-block-title">How I Work</h4>
+          <p class="section-body">
+            I use Clean Architecture (use cases &rarr; repositories &rarr; services &rarr; data sources) on every project. I
+            profile before optimizing, design schemas before writing APIs, and stay accountable until things run in
+            production - not just in a demo. I currently lead 3 junior and 2 mid-level developers at Zoraiz Embedded Systems.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-visual">
+        <div class="about-card-grid reveal reveal-d1">
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="5" y="2" width="14" height="20" rx="2" />
+              <line x1="12" y1="18" x2="12.01" y2="18" />
+            </svg>
+            Flutter
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M3 9h18M9 21V9" />
+            </svg>
+            Angular
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+            </svg>
+            Spring Boot
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            Dart / Java / TypeScript
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+            </svg>
+            PostgreSQL / MySQL
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7 16V4m0 0L3 8m4-4l4 4" />
+              <path d="M17 8v12m0 0l4-4m-4 4l-4-4" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+            </svg>
+            WebSockets / SSE
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+              <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+              <line x1="12" y1="20" x2="12.01" y2="20" />
+            </svg>
+            BLE / OCPP 1.6
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+            </svg>
+            ONNX / AI Inference
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            Clean Architecture
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+            </svg>
+            Firebase / SQLite
+          </div>
+          <div class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+            Real-time Systems
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHAT I BRING ========== -->
+  <section class="whyus-section">
+    <div class="section-inner section-inner--center">
+      <p class="section-eyebrow reveal">My Edge</p>
+      <h2 class="section-title reveal reveal-d1">What Sets My Work Apart</h2>
+      <div class="whyus-grid">
+        <div class="whyus-card reveal">
+          <div class="whyus-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+              <polyline points="8 10 10 12 14 8" />
+            </svg>
+          </div>
+          <h3>Full-Stack Ownership</h3>
+          <p>I design the schema, write the Spring Boot API, build the Angular dashboard, and ship the Flutter mobile app. One engineer accountable for the whole product - no interface gaps between layers.</p>
+        </div>
+        <div class="whyus-card reveal reveal-d1">
+          <div class="whyus-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+          </div>
+          <h3>Performance-Obsessed</h3>
+          <p>Tuned interview recording to sustain &lt;10ms frame rendering under concurrent camera, ML inference, avatar playback, and TTS. Accelerated crore-level railway dataset queries with trigger-maintained aggregation tables.</p>
+        </div>
+        <div class="whyus-card reveal reveal-d2">
+          <div class="whyus-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <polyline points="9 12 11 14 15 10" />
+            </svg>
+          </div>
+          <h3>Clean Architecture</h3>
+          <p>Every project follows use cases &rarr; repositories &rarr; services &rarr; data sources. Proper boundary separation means the codebase survives requirement changes, new developers, and production incidents without becoming spaghetti.</p>
+        </div>
+        <div class="whyus-card reveal reveal-d3">
+          <div class="whyus-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h3>Production-Hardened</h3>
+          <p>Real deployments in Indian Railways KAVACH environments, enterprise fleet EV management, and ONNX-based offline AI on Windows/Android. I've profiled and resolved memory leaks, lifecycle issues, and high-load query bottlenecks in production.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MY APPROACH ========== -->
+  <section class="process-section">
+    <div class="section-inner section-inner--center">
+      <p class="section-eyebrow reveal">How I Think</p>
+      <h2 class="section-title reveal reveal-d1">My Development Approach</h2>
+      <div class="process-track">
+        <div class="process-line"></div>
+        <div class="process-step reveal">
+          <div class="process-node">01</div>
+          <h4>Domain First</h4>
+          <p>Railway RDSO specs, OCPP protocol, or BLE packet framing - I dig into the domain before writing a line of code. Wrong mental model = wrong architecture.</p>
+        </div>
+        <div class="process-step reveal reveal-d1">
+          <div class="process-node">02</div>
+          <h4>Schema Before API</h4>
+          <p>I design normalized relational schemas (40–60+ tables) before writing a single endpoint. Data shapes everything - get it wrong and you pay forever.</p>
+        </div>
+        <div class="process-step reveal reveal-d2">
+          <div class="process-node">03</div>
+          <h4>Clean Boundaries</h4>
+          <p>Use cases, repositories, services, data sources - clear layers that let me swap implementations without rippling changes across the whole codebase.</p>
+        </div>
+        <div class="process-step reveal reveal-d3">
+          <div class="process-node">04</div>
+          <h4>Profile, Then Optimize</h4>
+          <p>I don't guess at bottlenecks. I profile. Trigger-maintained aggregation tables, batch parallel queries for 1M+ record exports, &lt;10ms concurrent render loops - all measured, not assumed.</p>
+        </div>
+        <div class="process-step reveal reveal-d4">
+          <div class="process-node">05</div>
+          <h4>Ship &amp; Own It</h4>
+          <p>I don't hand off halfway through. Mobile app, web dashboard, API, database - I'm accountable for the entire system running correctly in production, not just in staging.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS / EXPERTISE ========== -->
+  <section class="services-section" id="skills">
+    <div class="section-inner section-inner--center">
+      <p class="section-eyebrow reveal">What I Build</p>
+      <h2 class="section-title reveal reveal-d1">Core Expertise</h2>
+      <p class="section-subtitle reveal reveal-d2">
+        End-to-end delivery across mobile, web, backend, and database - on platforms that have to work.
+      </p>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="5" y="2" width="14" height="20" rx="2" />
+              <line x1="12" y1="18" x2="12.01" y2="18" />
+            </svg>
+          </div>
+          <h3>Flutter Mobile Development</h3>
+          <p>Cross-platform Android, iOS, and Windows apps built with Clean Architecture. BLE device control, ONNX-based AI inference, Intel RealSense IR camera integration, real-time WebSocket feeds, and &lt;10ms frame-render tuning.</p>
+        </div>
+
+        <div class="service-card delay-1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M3 9h18M9 21V9" />
+            </svg>
+          </div>
+          <h3>Angular Web Dashboards</h3>
+          <p>Production-grade Angular dashboards with 60+ modular components - real-time telemetry via WebSockets/SSE, RBAC access control, data visualization, large-dataset exports, and responsive operator interfaces.</p>
+        </div>
+
+        <div class="service-card delay-2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+            </svg>
+          </div>
+          <h3>Spring Boot API Architecture</h3>
+          <p>Scalable Spring Boot backends with OCPP 1.6 WebSocket servers, JWT/RBAC auth, REST APIs, and SSE streaming. Architected the complete OCPP server handling charger lifecycle, transactions, diagnostics, and command orchestration.</p>
+        </div>
+
+        <div class="service-card delay-1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+            </svg>
+          </div>
+          <h3>Database Architecture</h3>
+          <p>Normalized relational schema design (PostgreSQL/MySQL) with 40–60+ table systems for charger lifecycle, wallet transactions, railway telemetry packets, and device orchestration. Query optimization, trigger-maintained aggregation, and 1M+ record batch exports.</p>
+        </div>
+
+        <div class="service-card delay-2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7 16V4m0 0L3 8m4-4l4 4" />
+              <path d="M17 8v12m0 0l4-4m-4 4l-4-4" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+            </svg>
+          </div>
+          <h3>Real-Time Systems</h3>
+          <p>WebSocket and SSE pipelines for live charger monitoring, station telemetry, and device command dispatch. Designed systems that handle high-frequency packet tables at crore-level scale with sub-second dashboard refresh.</p>
+        </div>
+
+        <div class="service-card delay-3">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+            </svg>
+          </div>
+          <h3>AI / ML Integration</h3>
+          <p>On-device ONNX model inference (Silero VAD via sherpa_onnx) for automated silence detection in interview flows. Intel RealSense IR camera via native Kotlin threading and platform channels. Privacy-safe, offline AI with no cloud API dependency.</p>
+        </div>
+
+        <div class="service-card delay-1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+              <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+              <line x1="12" y1="20" x2="12.01" y2="20" />
+            </svg>
+          </div>
+          <h3>BLE &amp; Embedded Protocols</h3>
+          <p>Custom BLE communication layers for EV chargers - packet framing, retries, device configuration flows. OCPP 1.6 over WebSockets. UDP/HTTP device management tools (AX Configurator). LoRa wireless for agricultural IoT systems.</p>
+        </div>
+
+        <div class="service-card delay-2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3>Team Leadership</h3>
+          <p>Currently leading 3 junior and 2 mid-level developers at Zoraiz Embedded Systems. Define architecture standards, conduct code reviews, run sprint planning, and drive production-grade engineering practices across the team.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROTOCOLS & ACHIEVEMENTS ========== -->
+  <section class="compliance-section">
+    <div class="section-inner compliance-grid">
+      <div class="compliance-text">
+        <p class="section-eyebrow reveal">Technical Depth</p>
+        <h2 class="section-title reveal reveal-d1">Protocols &amp; Standards I've Worked With</h2>
+        <p class="section-body reveal reveal-d2">
+          These aren't just resume keywords. I've implemented OCPP 1.6 WebSocket servers from scratch, written
+          RDSO-spec PostgreSQL schemas with 60+ tables, and deployed ONNX models for on-device AI inference
+          without cloud dependencies.
+        </p>
+        <p class="section-body reveal reveal-d3">
+          From SIL2/SIL4-rated Indian Railways KAVACH environments to BLE-connected EV chargers -
+          I've worked with the actual specs, not just the frameworks on top of them.
+        </p>
+      </div>
+      <div class="compliance-badges reveal reveal-d2">
+        <div class="compliance-badge">
+          <span class="cb-code">OCPP 1.6</span>
+          <span class="cb-desc">Open Charge Point Protocol - Full WebSocket Implementation</span>
+        </div>
+        <div class="compliance-badge">
+          <span class="cb-code">BLE / GATT</span>
+          <span class="cb-desc">Bluetooth Low Energy - Custom Packet Framing &amp; Device Config</span>
+        </div>
+        <div class="compliance-badge">
+          <span class="cb-code">RDSO / KAVACH</span>
+          <span class="cb-desc">Indian Railways Safety Spec - 60+ Table Schema &amp; Packet Analytics</span>
+        </div>
+        <div class="compliance-badge">
+          <span class="cb-code">ONNX / Silero VAD</span>
+          <span class="cb-desc">On-Device ML Inference - Offline AI, No API Dependency</span>
+        </div>
+        <div class="compliance-badge">
+          <span class="cb-code">SIL 2 / SIL 4</span>
+          <span class="cb-desc">Safety Integrity Levels - Railway &amp; Industrial Environments</span>
+        </div>
+        <div class="compliance-badge">
+          <span class="cb-code">WebSockets / SSE</span>
+          <span class="cb-desc">Real-Time Bi-directional Comms - Crore-Level Packet Processing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects-section" id="project">
+    <div class="section-inner">
+
+      <div class="projects-header">
+        <p class="section-eyebrow reveal">What I've Built</p>
+        <h2 class="section-title reveal reveal-d1">Projects I've Led</h2>
+        <p class="section-subtitle reveal reveal-d2">
+          Lead developer across mobile, web, API, and database for every project below - from architecture to production.
+        </p>
+      </div>
+
+      <div class="project-showcase">
+
+        <!-- ===== FIREFLY ===== -->
+        <article class="project-row reveal">
+          <div class="project-media project-media--firefly">
+            <div class="project-visual-card">
+              <div class="project-visual-top">
+                <span class="project-visual-label">AI Interview Platform</span>
+                <span class="project-visual-status">Most Complex</span>
+              </div>
+              <div class="project-stack-visual">
+                <div class="psv-platforms">
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    Android
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    Windows
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    Web
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    API
+                  </span>
+                  <span class="psv-plat psv-plat--ai">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4"/></svg>
+                    ONNX AI
+                  </span>
+                </div>
+                <div class="psv-highlight">
+                  <div class="psv-metric-value">&lt;10ms</div>
+                  <div class="psv-metric-label">Frame rendering under concurrent camera capture, ML inference, avatar playback &amp; TTS</div>
+                </div>
+                <div class="psv-tech-tags">
+                  <span>Flutter (Android + Windows)</span><span>Angular</span><span>Spring Boot</span><span>ONNX Silero VAD</span><span>Intel RealSense IR</span><span>Kotlin Channels</span><span>FFmpeg</span><span>Azure</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="pc-top">
+              <span class="pc-badge pc-badge--own">Lead Developer</span>
+              <span class="pc-domain">HR Tech &amp; AI</span>
+            </div>
+            <div class="pc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                <path d="M15 10l4.553-2.069A1 1 0 0121 8.87v6.26a1 1 0 01-1.447.899L15 14" />
+                <rect x="3" y="6" width="12" height="12" rx="2" />
+              </svg>
+            </div>
+            <h3 class="pc-name">Firefly - AI-Powered Interview Platform</h3>
+            <p class="pc-desc">The most technically complex project I've worked on. Enterprise AI-driven interview management platform with Flutter apps for Android and Windows, an Angular web portal, and a Spring Boot backend. Led architecture using Clean Architecture (use cases, repositories, services, data sources), integrated Intel RealSense IR camera via native Kotlin threading and platform channels, and deployed ONNX-based Silero VAD for automated silence detection. Tuned the recording screen to sustain &lt;10ms frame rendering under simultaneous camera capture, ML inference, avatar playback, and TTS. Resolved memory leaks through centralized controller management and profiling.</p>
+            <ul class="pc-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Intel RealSense IR Camera via Kotlin Platform Channels</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>ONNX Silero VAD - Offline AI Silence Detection</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>&lt;10ms Frame Rendering Under Concurrent ML + TTS Workload</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Android &amp; Windows Flutter Apps + Multi-Tenant Web Portal</li>
+            </ul>
+            <div class="pc-tech">
+              <span>Flutter (Android + Windows)</span><span>Angular</span><span>Spring Boot</span><span>ONNX AI</span><span>Silero VAD</span><span>Intel RealSense IR</span><span>Kotlin Platform Channels</span><span>FFmpeg</span><span>Azure</span><span>Clean Architecture</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== C3 EV TOOL ===== -->
+        <article class="project-row project-row--reverse reveal reveal-d1">
+          <div class="project-media project-media--c3">
+            <div class="project-visual-card">
+              <div class="project-visual-top">
+                <span class="project-visual-label">EV Charging Management</span>
+                <span class="project-visual-status">OCPP 1.6</span>
+              </div>
+              <div class="project-stack-visual">
+                <div class="psv-platforms">
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    Mobile
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    Web
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    API
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    DB
+                  </span>
+                </div>
+                <div class="psv-highlight">
+                  <div class="psv-metric-value">40+</div>
+                  <div class="psv-metric-label">Normalized tables - charger lifecycle, wallet transactions &amp; device orchestration. 60+ Angular components.</div>
+                </div>
+                <div class="psv-tech-tags">
+                  <span>Spring Boot</span><span>Angular</span><span>Flutter</span><span>MySQL</span><span>OCPP 1.6</span><span>WebSocket</span><span>SSE</span><span>Razorpay</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="pc-top">
+              <span class="pc-badge pc-badge--own">Lead Developer</span>
+              <span class="pc-domain">EV &amp; Energy</span>
+            </div>
+            <div class="pc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <h3 class="pc-name">C3-EV - OCPP 1.6 Charging Ecosystem</h3>
+            <p class="pc-desc">Command-Control-Center - a full EV charging management platform I architected and delivered end-to-end. Built the complete OCPP 1.6 WebSocket server handling charger lifecycle, transactions, diagnostics, and command orchestration. Designed and normalized a relational schema (~40+ tables) for charger lifecycle, wallet transactions, and device orchestration workflows. Engineered the Angular dashboard (60+ modular components) for real-time charger monitoring, command dispatch, and analytics. Also built the Flutter mobile app for end-user EV charging with real-time session updates and Razorpay wallet integration.</p>
+            <ul class="pc-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>OCPP 1.6 WebSocket Server - Full Charger Lifecycle &amp; Command Orchestration</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>40+ Table Normalized Schema - Wallet, Transactions, Devices</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Angular Dashboard - 60+ Components, Real-Time Telemetry via WebSocket/SSE</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Flutter Mobile App + Razorpay Wallet Integration</li>
+            </ul>
+            <div class="pc-tech">
+              <span>Spring Boot</span><span>Angular</span><span>Flutter</span><span>MySQL</span><span>WebSocket</span><span>OCPP 1.6</span><span>SSE</span><span>Razorpay</span><span>Apache Tomcat</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== NMS DATA ANALYZER ===== -->
+        <article class="project-row reveal reveal-d1">
+          <div class="project-media project-media--nms">
+            <div class="project-visual-card">
+              <div class="project-visual-top">
+                <span class="project-visual-label">Railway Telemetry</span>
+                <span class="project-visual-status">SIL2 / SIL4</span>
+              </div>
+              <div class="project-stack-visual">
+                <div class="psv-platforms">
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    Web
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    Desktop
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    API
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    PostgreSQL
+                  </span>
+                </div>
+                <div class="psv-highlight">
+                  <div class="psv-metric-value">1Cr+</div>
+                  <div class="psv-metric-label">Packet table records - trigger aggregation cut heavy joins. 1M+ row batch exports.</div>
+                </div>
+                <div class="psv-tech-tags">
+                  <span>Angular</span><span>Spring Boot</span><span>PostgreSQL</span><span>KAVACH</span><span>STCAS / LTCAS</span><span>SIL2/4</span><span>RDSO Spec</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="pc-top">
+              <span class="pc-badge pc-badge--client">Lead Developer</span>
+              <span class="pc-domain">Railways &amp; Safety</span>
+            </div>
+            <div class="pc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                <path d="M3 12h18M3 6l9-3 9 3M3 18l9 3 9-3" />
+                <circle cx="12" cy="12" r="2" />
+              </svg>
+            </div>
+            <h3 class="pc-name">NMS Data Analyzer - Railway Telemetry System</h3>
+            <p class="pc-desc">Network Management System for KAVACH - Indian Railways' collision-avoidance system. Modeled the entire PostgreSQL schema (~60+ tables) based on RDSO railway specifications, then built the Angular web application for real-time monitoring and analytics. Accelerated dashboard queries joining high-volume packet tables at crore-level record counts by introducing trigger-maintained aggregation tables. Delivered large dataset exports (1M+ records) using batched parallel queries and server-side PDF/Excel generation. Also delivered TSRMS - a TSR management system shipped as both a web and Qt/C++ desktop application for two different Indian Railways clients.</p>
+            <ul class="pc-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>60+ Table RDSO-Spec PostgreSQL Schema</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Crore-Level Packet Query Optimization via Trigger Aggregation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>1M+ Record Exports - Batched Parallel Queries + PDF/Excel</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Real-Time SoS Alerts, Track Profile Visualization, Loco Mode-Shift Analytics</li>
+            </ul>
+            <div class="pc-tech">
+              <span>Spring Boot</span><span>Angular</span><span>PostgreSQL</span><span>KAVACH</span><span>STCAS / LTCAS</span><span>SIL2/4</span><span>Packet Analytics</span><span>PDF/Excel Export</span><span>RBAC</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== SMART SOCKET ===== -->
+        <article class="project-row project-row--reverse reveal reveal-d1">
+          <div class="project-media project-media--socket">
+            <div class="project-visual-card">
+              <div class="project-visual-top">
+                <span class="project-visual-label">BLE EV Charging</span>
+                <span class="project-visual-status">4 Applications</span>
+              </div>
+              <div class="project-stack-visual">
+                <div class="psv-platforms">
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    Android / iOS
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    Web
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    API
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                    BLE
+                  </span>
+                </div>
+                <div class="psv-highlight">
+                  <div class="psv-metric-value">4 Apps</div>
+                  <div class="psv-metric-label">Customer app + Admin app + Web dashboard + AX Configurator device tool</div>
+                </div>
+                <div class="psv-tech-tags">
+                  <span>Flutter (Android/iOS)</span><span>Angular</span><span>Spring Boot</span><span>MySQL</span><span>BLE / GATT</span><span>UDP/HTTP</span><span>Razorpay</span><span>AWS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="pc-top">
+              <span class="pc-badge pc-badge--client">Lead Developer</span>
+              <span class="pc-domain">EV &amp; Smart Infra</span>
+            </div>
+            <div class="pc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M9 9h.01M15 9h.01M9 15h6" />
+                <path d="M12 3v2M12 19v2M3 12h2M19 12h2" />
+              </svg>
+            </div>
+            <h3 class="pc-name">Smart Socket - BLE EV Charging &amp; Wallet Platform</h3>
+            <p class="pc-desc">Multi-application EV charging ecosystem - customer Flutter apps (Android/iOS), admin mobile app, web dashboard, and an AX Configurator device management tool. Designed hybrid BLE-based charger control with server-synced wallet validation for secure session management. Built the AX Configurator using UDP/HTTP for low-level charger parameter configuration. Integrated Razorpay-powered wallet system supporting prepaid charging sessions and the full transaction lifecycle. Also shipped AtomEV - a companion offline-first BLE platform with custom packet framing, retries, and firmware update flows.</p>
+            <ul class="pc-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Hybrid BLE + Server-Synced Session Management</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>AX Configurator - UDP/HTTP Low-Level Device Management Tool</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Razorpay Wallet - Prepaid Charging &amp; Transaction Lifecycle</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Customer App + Admin App + Web Dashboard + Device Tool</li>
+            </ul>
+            <div class="pc-tech">
+              <span>Flutter (Android/iOS)</span><span>Angular</span><span>Spring Boot</span><span>MySQL</span><span>AWS</span><span>BLE / GATT</span><span>UDP/HTTP</span><span>Razorpay</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== FIELDSYNC ===== -->
+        <article class="project-row reveal reveal-d2">
+          <div class="project-media project-media--fieldsync">
+            <div class="project-visual-card">
+              <div class="project-visual-top">
+                <span class="project-visual-label">IoT Device Management</span>
+                <span class="project-visual-status">Mesh Active</span>
+              </div>
+              <div class="project-stack-visual">
+                <div class="psv-platforms">
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    Mobile
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    Web
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    API
+                  </span>
+                  <span class="psv-plat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                    IoT Mesh
+                  </span>
+                </div>
+                <div class="psv-highlight">
+                  <div class="psv-metric-value">ESP-NOW</div>
+                  <div class="psv-metric-label">Mesh network - eliminates broker dependency in dense field deployments with unreliable internet</div>
+                </div>
+                <div class="psv-tech-tags">
+                  <span>Flutter</span><span>Angular</span><span>Spring Boot</span><span>PostgreSQL</span><span>ESP-NOW Mesh</span><span>BLE</span><span>Wi-Fi</span><span>Azure</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="pc-top">
+              <span class="pc-badge pc-badge--own">Lead Developer</span>
+              <span class="pc-domain">IoT &amp; Device Mgmt</span>
+            </div>
+            <div class="pc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+                <circle cx="12" cy="10" r="2" />
+                <path d="M12 8V6M12 14v-2M8 10H6M18 10h-2" />
+              </svg>
+            </div>
+            <h3 class="pc-name">FieldSync - IoT Device Management Platform</h3>
+            <p class="pc-desc">IoT device management platform bridging field hardware to the cloud in real time. Built the Flutter mobile app, Angular web dashboard, and Spring Boot WebSocket backend for device registration, live command dispatch, session tracking, and analytics export. Devices communicate over ESP-NOW mesh networking and dual BLE/Wi-Fi, designed for dense field deployments with unreliable internet - eliminating broker dependency where it matters most.</p>
+            <ul class="pc-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Real-Time WebSocket Device Bridge</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>ESP-NOW Mesh Network + Dual BLE/Wi-Fi</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Live Command &amp; Response Operations</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>Session Logs &amp; XLSX Export</li>
+            </ul>
+            <div class="pc-tech">
+              <span>Flutter</span><span>Angular</span><span>Spring Boot</span><span>PostgreSQL</span><span>WebSocket</span><span>ESP-NOW Mesh</span><span>BLE</span><span>Wi-Fi</span><span>Azure</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ========== MORE PROJECTS GRID ========== -->
+      <div class="more-projects-header reveal">
+        <h3>More Projects</h3>
+        <p>Additional platforms and tools I've led across mobile, web, and desktop.</p>
+      </div>
+      <div class="mini-projects-grid">
+
+        <div class="mini-project-card reveal">
+          <div class="mini-project-top">
+            <span class="pc-badge pc-badge--client">Lead Developer</span>
+            <span class="pc-domain">Transport &amp; Mobility</span>
+          </div>
+          <h4>OHM Cabs</h4>
+          <p>Full EV ride-hailing platform - customer Flutter app, driver app, and Angular admin dashboard with live vehicle map tracking, driver performance metrics, and ride analytics.</p>
+          <div class="pc-tech">
+            <span>Flutter (Android/iOS)</span><span>Angular</span><span>Spring Boot</span><span>MySQL</span><span>Google Cloud</span><span>Google Maps</span>
+          </div>
+        </div>
+
+        <div class="mini-project-card reveal reveal-d1">
+          <div class="mini-project-top">
+            <span class="pc-badge pc-badge--own">Lead Developer</span>
+            <span class="pc-domain">HR Technology</span>
+          </div>
+          <h4>HR Management System</h4>
+          <p>Employee management platform - employee details, salary tracking, attendance, leave requests, payslips, daily work reports, and project task management. Full RBAC for admin and employee roles.</p>
+          <div class="pc-tech">
+            <span>Angular</span><span>Spring Boot</span><span>MySQL</span><span>RBAC</span>
+          </div>
+        </div>
+
+        <div class="mini-project-card reveal reveal-d2">
+          <div class="mini-project-top">
+            <span class="pc-badge pc-badge--client">Lead Developer</span>
+            <span class="pc-domain">Agricultural IoT</span>
+          </div>
+          <h4>Smart Starter</h4>
+          <p>LoRa-based pump starter management for farmers and industrial users. Remote starter operation, predictive maintenance alerts, real-time data sync with mobile app, and remote firmware updates via Angular web dashboard.</p>
+          <div class="pc-tech">
+            <span>Angular</span><span>Spring Boot</span><span>MySQL</span><span>LoRa</span><span>IoT</span>
+          </div>
+        </div>
+
+        <div class="mini-project-card reveal">
+          <div class="mini-project-top">
+            <span class="pc-badge pc-badge--client">Lead Developer</span>
+            <span class="pc-domain">Industrial Manufacturing</span>
+          </div>
+          <h4>Transcon Quality Testing &amp; Monitoring</h4>
+          <p>Six-stage quality testing platform for transformer manufacturing - configurable test parameters, material models, barcode scanning, test certificate generation, and data export. Admin and user role management.</p>
+          <div class="pc-tech">
+            <span>Angular</span><span>Spring Boot</span><span>MySQL</span><span>PDF Generation</span>
+          </div>
+        </div>
+
+        <div class="mini-project-card reveal reveal-d1">
+          <div class="mini-project-top">
+            <span class="pc-badge pc-badge--client">Lead Developer</span>
+            <span class="pc-domain">Indian Railways</span>
+          </div>
+          <h4>TSRMS - TSR Management System</h4>
+          <p>Temporary Speed Restriction management for Indian Railways - delivered as both a Qt/C++ desktop app and Angular web app for two railway clients. RBAC user management, centralized TSR server, and OHE pole management.</p>
+          <div class="pc-tech">
+            <span>Angular</span><span>Spring Boot</span><span>PostgreSQL</span><span>Qt C++</span><span>RBAC</span>
+          </div>
+        </div>
+
+        <div class="mini-project-card reveal reveal-d2">
+          <div class="mini-project-top">
+            <span class="pc-badge pc-badge--client">Lead Developer</span>
+            <span class="pc-domain">HR Technology</span>
+          </div>
+          <h4>Sana Connect</h4>
+          <p>Employee self-service mobile app - attendance punching with geolocation, leave requests, payslip access, salary info, and daily worksheet management. Role-based features for admins and employees. Firebase-backed with real-time sync.</p>
+          <div class="pc-tech">
+            <span>Flutter (Android/iOS)</span><span>Firebase</span><span>Cloud Functions</span><span>Firestore</span>
+          </div>
+        </div>
+
+        <div class="mini-project-card reveal">
+          <div class="mini-project-top">
+            <span class="pc-badge pc-badge--client">Lead Developer</span>
+            <span class="pc-domain">EV Charging</span>
+          </div>
+          <h4>Atom EV</h4>
+          <p>Offline-first BLE EV charging platform - custom BLE communication layer with packet framing, retries, and device config flows. Customer Flutter app, admin app with firmware update capability, and Angular web monitoring dashboard.</p>
+          <div class="pc-tech">
+            <span>Flutter (Android/iOS)</span><span>Angular</span><span>Spring Boot</span><span>PostgreSQL</span><span>BLE / GATT</span><span>AWS</span>
+          </div>
+        </div>
+
+        <div class="mini-project-card reveal reveal-d1">
+          <div class="mini-project-top">
+            <span class="pc-badge pc-badge--client">Lead Developer</span>
+            <span class="pc-domain">Property Services</span>
+          </div>
+          <h4>Sekure</h4>
+          <p>On-demand property services platform - user app for booking electrical, carpentry, plumbing, legal, and security services; executive app for completing jobs; and an Angular admin dashboard for service order management.</p>
+          <div class="pc-tech">
+            <span>Flutter (Android/iOS)</span><span>Angular</span><span>Spring Boot</span><span>MySQL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INSIGHTS ========== -->
+  <section class="insights-section">
+    <div class="section-inner section-inner--center">
+      <p class="section-eyebrow reveal">Technical Writing</p>
+      <h2 class="section-title reveal reveal-d1">Insights &amp; Perspectives</h2>
+      <div class="insights-grid">
+        <article class="insight-card reveal">
+          <span class="insight-tag">Flutter Performance</span>
+          <h3 class="insight-title">Sustaining &lt;10ms Frame Rendering Under Concurrent AI, Camera, and TTS Workloads</h3>
+          <p class="insight-excerpt">The Firefly interview recording screen runs ONNX inference, Intel RealSense camera capture, avatar video playback, and TTS simultaneously. Here's how I profiled and tuned it to stay under 10ms - and why centralized controller management was the key.</p>
+          <a href="#contact" class="insight-link">Get In Touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </article>
+        <article class="insight-card reveal reveal-d1">
+          <span class="insight-tag">Database Architecture</span>
+          <h3 class="insight-title">Crore-Level Queries: Trigger-Maintained Aggregation vs. Real-Time Joins in PostgreSQL</h3>
+          <p class="insight-excerpt">When your dashboard is joining packet tables with crore-level records on every page load, real-time joins aren't viable. I introduced trigger-maintained aggregation tables in the NMS railway system - here's the design decision and the trade-offs.</p>
+          <a href="#contact" class="insight-link">Get In Touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </article>
+        <article class="insight-card reveal reveal-d2">
+          <span class="insight-tag">Mobile Architecture</span>
+          <h3 class="insight-title">Clean Architecture in Flutter: Why Use Cases, Repositories, and Services Beat the Alternatives</h3>
+          <p class="insight-excerpt">After building 12+ Flutter apps from single-screen utilities to enterprise AI platforms, I've settled firmly on Clean Architecture. Here's the pattern I use, why it survives requirement changes, and where the boundary lines actually matter.</p>
+          <a href="#contact" class="insight-link">Get In Touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq-section">
+    <div class="section-inner faq-grid">
+      <div class="faq-intro">
+        <p class="section-eyebrow reveal">Got Questions?</p>
+        <h2 class="section-title reveal reveal-d1">Frequently Asked</h2>
+        <p class="section-body reveal reveal-d2">
+          Common questions about my background, how I work, and what I'm looking for.
+          Don't see yours? <a href="#contact">Ask me directly.</a>
+        </p>
+      </div>
+      <div class="faq-list reveal reveal-d2">
+        <details class="faq-item">
+          <summary>What platforms do you develop for?</summary>
+          <p>Mobile (Flutter Android, iOS, Windows), web (Angular), backend (Spring Boot), and database (PostgreSQL, MySQL, Firebase). I've also worked with desktop apps (Qt/C++ for a railway client). I own the full stack on every project I lead.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What industries have you worked in?</summary>
+          <p>EV charging infrastructure (OCPP 1.6), Indian Railways (KAVACH/TCAS, RDSO specs, SIL2/SIL4), HR technology and AI, industrial IoT (LoRa, BLE, ESP-NOW mesh), ride-hailing, transformer manufacturing QA, and property services. All with real production deployments.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What makes your Flutter work different?</summary>
+          <p>I build with Clean Architecture from day one - use cases, repositories, services, data sources. I've resolved complex production issues: memory leaks under concurrent workloads, &lt;10ms frame rendering with live ML inference and camera capture, Intel RealSense IR camera integration via Kotlin platform channels, and ONNX-based on-device AI without cloud dependencies.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Why did you build this portfolio?</summary>
+          <p>Mostly to document work I'm proud of. I've built a lot of production systems over 6+ years and this is a clean place to put them. Not looking to move - just wanted a proper record of what I've actually built and the technical decisions behind it.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can you take over an existing codebase?</summary>
+          <p>Absolutely. I've inherited and extended large systems - whether it's adding Angular features to an existing Spring Boot backend or profiling a Flutter app to find the source of memory leaks. I read before I rewrite.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you work with teams, or solo?</summary>
+          <p>Both. I currently lead a team of 5 at Zoraiz (3 junior, 2 mid-level), driving architecture decisions, code reviews, and engineering standards. I'm equally comfortable as a solo engineer owning an entire product, or integrating into an existing team.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="careers-section" id="experience">
+    <div class="section-inner section-inner--center">
+      <p class="section-eyebrow reveal">Work History</p>
+      <h2 class="section-title reveal reveal-d1">Professional Experience</h2>
+      <p class="section-subtitle reveal reveal-d2">
+        6+ years of full-stack engineering across mobile, web, and backend.
+      </p>
+
+      <div class="careers-grid">
+        <div class="career-card">
+          <div class="career-tag">Nov 2023 &ndash; Present</div>
+          <h3>Lead Full-Stack Engineer</h3>
+          <p class="career-exp">Zoraiz Embedded Systems &nbsp;&middot;&nbsp; Hyderabad, India</p>
+          <p>Own architecture and implementation across mobile, backend, and web systems. Lead 3 junior and 2 mid-level developers. Delivered C3-EV (OCPP 1.6 ecosystem), Firefly (AI interview platform - ONNX/RealSense), NMS Data Analyzer (railway telemetry, crore-level datasets), FieldSync, HR Management System, Smart Starter, and Transcon QA Tool.</p>
+          <div class="pc-tech" style="margin-top: 1rem;">
+            <span>Flutter</span><span>Angular</span><span>Spring Boot</span><span>PostgreSQL</span><span>MySQL</span><span>OCPP 1.6</span><span>ONNX AI</span><span>WebSockets</span>
+          </div>
+        </div>
+        <div class="career-card">
+          <div class="career-tag">Mar 2021 &ndash; Oct 2023</div>
+          <h3>Flutter Developer</h3>
+          <p class="career-exp">Sana Software Services &nbsp;&middot;&nbsp; Hyderabad, India</p>
+          <p>Owned end-to-end system architecture across mobile, backend, and web platforms. Architected Smart Socket (multi-app BLE EV ecosystem with Razorpay wallet), AtomEV (offline BLE charging platform with custom packet framing), OHM Cabs (EV ride-hailing), Sana Connect (employee HR app), and Sekure (property services platform).</p>
+          <div class="pc-tech" style="margin-top: 1rem;">
+            <span>Flutter (Android/iOS)</span><span>Angular</span><span>Spring Boot</span><span>MySQL</span><span>BLE</span><span>Firebase</span><span>AWS</span>
+          </div>
+        </div>
+        <div class="career-card">
+          <div class="career-tag">Jun 2020 &ndash; Dec 2020</div>
+          <h3>Trainee Software Engineer</h3>
+          <p class="career-exp">Incredible Path Technologies &nbsp;&middot;&nbsp; Hyderabad, India</p>
+          <p>Constructed modular Flutter UI components and contributed to Agile-based delivery cycles. First professional exposure to mobile development, establishing the foundation for the Flutter architecture patterns I use today.</p>
+          <div class="pc-tech" style="margin-top: 1rem;">
+            <span>Flutter</span><span>Dart</span><span>Agile</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="recruitment-process reveal" style="margin-top: 3rem;">
+        <p class="recruitment-label">Education</p>
+        <div class="recruitment-steps">
+          <span class="recruitment-step"><span class="recruitment-num">B.E</span>M.V.S.R Engineering College, Hyderabad</span>
+          <span class="recruitment-divider">&middot;</span>
+          <span class="recruitment-step"><span class="recruitment-num">&#x1F4C5;</span>2014 &ndash; 2018</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact-section" id="contact">
+    <div class="section-inner section-inner--center">
+      <p class="section-eyebrow reveal">Get In Touch</p>
+      <h2 class="section-title reveal reveal-d1">Let's Talk</h2>
+      <p class="section-subtitle reveal reveal-d2">
+        Have a technical question, an interesting problem to discuss, or want to connect over shared work? Drop me an email.
+        I built this portfolio to share what I do - not to advertise myself, just to document it properly.
+      </p>
+    </div>
+
+    <div class="section-inner contact-grid">
+      <div class="contact-text">
+        <div class="contact-reach">
+          <h3 class="contact-reach-title reveal">Get in Touch</h3>
+          <div class="contact-details">
+            <div class="contact-item reveal reveal-d1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <a href="mailto:ptirumalateja96@gmail.com">ptirumalateja96&#64;gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item reveal reveal-d2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <div>
+                <span class="contact-item-label">Phone</span>
+                <a href="tel:+919505081386">(+91) 9505081386</a>
+              </div>
+            </div>
+            <div class="contact-item reveal reveal-d3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <div>
+                <span class="contact-item-label">Location</span>
+                <span>Hyderabad, Telangana, India</span>
+              </div>
+            </div>
+            <div class="contact-item reveal reveal-d4">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              <div>
+                <span class="contact-item-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/pulipati-tirumala-teja-0b8054284/" target="_blank" rel="noopener">pulipati-tirumala-teja</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-expect reveal reveal-d2">
+          <h3 class="contact-reach-title">What to Expect</h3>
+          <ul class="contact-expect-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>I respond within a day - usually the same day.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>No agenda. Just a genuine conversation if you find the work interesting.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Happy to dig into technical topics - architecture, protocol choices, performance problems.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>If I can't help, I'll say so and point you in the right direction.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <div class="contact-cta-box reveal reveal-d2">
+          <div class="contact-cta-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </div>
+          <h3>Say hello.</h3>
+          <p>Interesting problem, technical question, or just want to connect - a quick message is enough to start a conversation.</p>
+          <a href="mailto:ptirumalateja96@gmail.com" class="btn-primary btn-large">Send Me an Email</a>
+        </div>
+
+        <div class="contact-scope-cards reveal reveal-d3">
+          <div class="contact-scope-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+            <div>
+              <span>Technical Discussion</span>
+              <p>Architecture, protocol choices, performance - happy to dig in.</p>
+            </div>
+          </div>
+          <div class="contact-scope-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+            <div>
+              <span>Just Curious</span>
+              <p>Stumbled on the work and want to know more about it.</p>
+            </div>
+          </div>
+          <div class="contact-scope-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            <div>
+              <span>Say Hello</span>
+              <p>No reason needed - always good to connect with people doing interesting things.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-inner">
+
+        <div class="footer-col footer-col--brand">
+          <div class="footer-brand">
+            <div>
+              <span class="footer-name">Tirumala Teja</span>
+              <span class="footer-sub">Lead Full-Stack Engineer</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Flutter &middot; Angular &middot; Spring Boot &middot; PostgreSQL - production-grade systems, end to end.
+          </p>
+          <div class="footer-contact-mini">
+            <a href="mailto:ptirumalateja96@gmail.com" class="footer-contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              ptirumalateja96&#64;gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/pulipati-tirumala-teja-0b8054284/" target="_blank" rel="noopener" class="footer-contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              LinkedIn
+            </a>
+            <span class="footer-contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              Hyderabad, India
+            </span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigate</h4>
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Core Skills</h4>
+          <ul class="footer-nav">
+            <li><a href="#skills">Flutter Mobile (Android/iOS/Windows)</a></li>
+            <li><a href="#skills">Angular Web Dashboards</a></li>
+            <li><a href="#skills">Spring Boot APIs</a></li>
+            <li><a href="#skills">PostgreSQL / MySQL</a></li>
+            <li><a href="#skills">Real-Time WebSockets</a></li>
+            <li><a href="#skills">ONNX / AI Integration</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Domains</h4>
+          <ul class="footer-nav">
+            <li><a href="#project">EV &amp; Energy</a></li>
+            <li><a href="#project">Indian Railways</a></li>
+            <li><a href="#project">HR Technology &amp; AI</a></li>
+            <li><a href="#project">Industrial IoT</a></li>
+            <li><a href="#project">Smart Transport</a></li>
+          </ul>
+          <div class="footer-badges">
+            <span class="footer-badge">OCPP 1.6</span>
+            <span class="footer-badge">BLE</span>
+            <span class="footer-badge">SIL 2/4</span>
+            <span class="footer-badge">ONNX AI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p class="footer-copy">&copy; 2025 Pulipati Tirumala Teja. All rights reserved.</p>
+        <p class="footer-location">Hyderabad, Telangana, India &nbsp;&middot;&nbsp; ptirumalateja96&#64;gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+</main>
